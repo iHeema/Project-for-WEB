@@ -1,0 +1,115 @@
+<!Doctype html>
+<html>
+<head>
+       <title>Web Development</title> 
+
+    
+    <style>
+    Div.logo {
+            
+            border: 1px solid;
+            border-color: aqua;
+            background-color: lightblue;
+        }
+        table , th , td {
+            
+            border: 1px soild white;
+            border-collapse: collapse;
+        
+        }
+    
+        th , td{
+            background-color: #96d4d4; 
+        }
+        .button {
+  background-color: lightblue; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid lightblue;
+}
+
+.button1:hover {
+  background-color: lightblue;
+  color: white;
+}
+        
+        form.logout {
+            text-align: center;
+            color: white;
+            font-size: 20;
+        } 
+    </style>
+    
+    
+    </head>
+<body>
+    <div class="logo" id= "logo" align="middle" >
+        <img src="taibahlogo.png" alt="Taibah_logo" width="100" height="100" >
+          <h2>Welcome to Taibah University</h2>
+        </div>
+    
+    
+    
+    
+    
+    
+    <img id="image" src="books.webp">
+    <p id="info"></p>
+    <script>
+        document.getElementById("image").src = "books2.jpeg";
+        const person = {
+            firstName : "Ibrahim",
+            lastName : "Alawfi",
+            gpa : "4.01"
+        };
+        
+        document.getElementById("info").innerHTML=
+            person.firstName +" gpa is "+ person.gpa +" grade.";
+    </script>
+    
+              <h2>YOUR TABLE</h2>
+    <table style="width: 100%">
+    <tr>
+      <th>SUBJECT</th>
+      <th>CLASS</th>
+      <th>TIME</th>
+        </tr>
+        
+    <tr>
+        <td>English</td>
+        <td>Hall 3</td>
+        <td>09:15am</td>
+          </tr>
+        
+    <tr>
+        <td>Web development</td>
+        <td>Lab 6</td>
+        <td>10:45am</td>
+        </tr>
+        
+    <tr>
+        <td>Caculus</td>
+        <td>Hall 5</td>
+        <td>01:00pm</td>
+        </tr>
+        </table>
+    <a class="button button1"href="Index1.html">Logout</a>
+        
+    </body>
+    
+
+
+</html>
